@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cosmic Miner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background stars -->
+  <div class="starfield">
+    <div class="stars layer1"></div>
+    <div class="stars layer2"></div>
+    <div class="stars layer3"></div>
+  </div>
+
+  <!-- UI -->
+  <div id="hud">
+    <div class="logo">COSMIC MINER</div>
+    <div class="stats">
+      <div id="score" class="neon">Score: 0</div>
+      <div id="level" class="neon">Level: 1</div>
+      <div id="lives" class="hearts" aria-label="lives"></div>
+    </div>
+  </div>
+
+  <!-- Menus -->
+  <div id="menu" class="overlay visible">
+    <div class="panel">
+      <h1 class="title">COSMIC MINER</h1>
+      <p class="subtitle">Collect crystals. Dodge asteroids. Survive.</p>
+      <div class="controls">
+        <div><b>Move</b>: WASD / Arrow Keys</div>
+        <div><b>Pause</b>: Space</div>
+        <div><b>Restart</b>: Enter (on Game Over)</div>
+      </div>
+      <button id="btnPlay" class="btn">Play</button>
+    </div>
+  </div>
+
+  <div id="pause" class="overlay">
+    <div class="panel small">
+      <h2>Paused</h2>
+      <p>Press Space to resume</p>
+      <button id="btnResume" class="btn">Resume</button>
+    </div>
+  </div>
+
+  <div id="gameover" class="overlay">
+    <div class="panel">
+      <h2>Game Over</h2>
+      <p id="finalScore">Final Score: 0</p>
+      <button id="btnRestart" class="btn">Restart</button>
+    </div>
+  </div>
+
+  <!-- Canvas -->
+  <canvas id="game" width="800" height="600" aria-label="game canvas"></canvas>
+
+  <script src="game.js"></script>
+</body>
+</html>
