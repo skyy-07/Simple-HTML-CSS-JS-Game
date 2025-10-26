@@ -35,4 +35,4 @@ Built entirely with **vanilla JavaScript**, **HTML**, and **CSS**, it’s a show
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/<your-username>/cosmic-miner.git
+   git clone https://github.com/skyy-07/Simple-HTML-CSS-JS-Game.git
